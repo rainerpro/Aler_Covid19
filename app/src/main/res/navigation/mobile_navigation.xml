@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_estadisticas"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/nav_estadisticas"
+        android:name="com.example.alert_covid19.ui.EstadisticasFragment"
+        android:label="@string/menu_estadisticas"
+        tools:layout="@layout/estadisticas_fragment" />
+
+    <fragment
+        android:id="@+id/nav_noticia"
+        android:name="com.example.alert_covid19.ui.NoticiaFragment"
+        android:label="@string/menu_noticia"
+        tools:layout="@layout/noticia_fragment" />
+
+    <fragment
+        android:id="@+id/nav_sintoma"
+        android:name="com.example.alert_covid19.ui.Sintomafragment"
+        android:label="@string/menu_sintoma"
+        tools:layout="@layout/sintomafragment_fragment" />
+    <fragment
+        android:id="@+id/nav_ayuda"
+        android:name="com.example.alert_covid19.ui.Ayudafragment"
+        android:label="@string/menu_ayuda"
+        tools:layout="@layout/ayudafragment_fragment" />
+</navigation>
